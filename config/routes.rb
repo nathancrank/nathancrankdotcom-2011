@@ -1,4 +1,10 @@
 Nathancrankdotcom::Application.routes.draw do
+  get "pages/portfolio"
+
+  get "pages/blog"
+
+  get "pages/contact"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
