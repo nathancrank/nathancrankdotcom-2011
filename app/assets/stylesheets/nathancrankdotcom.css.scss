@@ -1,10 +1,16 @@
 $dark_color: #1c242a;
-$light_color: #fff;
+$light_color: #fefefe;
 $color_one: #acc0c7;
 $color_two: #404f6d;
 
 @import "reset.css";
 
+
+/*
+-webkit-transition: all .5s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+*/
 
 /* Importing League Gothic */
 @font-face {
@@ -20,6 +26,7 @@ $color_two: #404f6d;
 
 body {
 	font-family: Helvetica, Arial;
+	font-weight: light;
 }
 
 @mixin leaguegothic {
@@ -36,6 +43,17 @@ body {
 	@include leaguegothic;
 	text-transform: uppercase;
 	line-height: 80%;
+}
+
+.coming_soon {
+	@include leaguegothic;
+	margin-top: 50px;
+	text-align: right;
+	font-weight: bolder;
+	h1 {
+		font-size: 339px;
+		color: #ddd;
+	}
 }
 
 .container {
@@ -86,7 +104,7 @@ body {
 	}
 	a:first-child {
 		padding-left: 10px;
-		padding-right: 27px;
+		padding-right: 25px;
 	}
 	a:nth-child(2) {
 		padding: 0 28px;
@@ -113,32 +131,10 @@ footer {
 
 
 @mixin article($al_color, $abg_color) {	
-	padding: 50px 0;
+	padding: 0 0 50px 0;
 	background-color: $abg_color;
 	overflow: auto;
 	
-	.gallery {
-		display: block;
-		height: 400px;
-		img {
-			border: 1px #ccc solid;
-		}
-	}
-	
-	.gallery_large_image {
-		img {
-			width: 650px;
-			float: left;
-		}
-	}
-	.gallery_thumbnail_image {
-		img {
-			width: 200px;
-			float: left;
-			margin-left: 72px;
-			margin-bottom: 15px;
-		}
-	}
 	
 	.article_header {
 		@include leaguegothic;
@@ -149,7 +145,8 @@ footer {
 	.article_url {
 		text-align: right;
 		padding-left: 20px;
-		float: right;
+		display: block;
+		margin-top: 15px;
 		a { 
 			text-decoration: none;
 			color: $al_color;
@@ -158,12 +155,18 @@ footer {
 	}
 	
 	.article_tags {
+		display: block;
 		li {
 			background-color: #505960;
 			padding: 3px 10px;
-			float: right;
-			margin: 5px;
+			float: left;
+			margin: 10px 10px 0 0;
 			@include rounded;
+			color: #fff;
+			font-weight: lighter;
+			font-size: 12px;
+			line-height: 140%;
+			border: 1px solid #888;
 		}
 		
 	}
@@ -173,7 +176,7 @@ footer {
 		width: 670px;
 		padding: 0px 50px 20px 0;
 		color: $al_color;
-		line-height: 140%;
+		line-height: 170%;
 	}
 	.article_summary {
 		float: right;
