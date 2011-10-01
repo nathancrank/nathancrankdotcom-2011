@@ -3,6 +3,8 @@ $light_color: #fff;
 $color_one: #acc0c7;
 $color_two: #404f6d;
 
+@import "reset.css";
+
 
 /* Importing League Gothic */
 @font-face {
@@ -16,8 +18,18 @@ $color_two: #404f6d;
     font-style: normal;
 }
 
+body {
+	font-family: Helvetica, Arial;
+}
+
 @mixin leaguegothic {
 	font-family: "LeagueGothicRegular", Helvetica, Arial;
+}
+
+@mixin rounded($radius: 5px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
 }
 
 @mixin headerh1 {
@@ -102,9 +114,8 @@ footer {
 
 @mixin article($al_color, $abg_color) {	
 	padding: 50px 0;
-	display: block;
-	min-height: 600px;
 	background-color: $abg_color;
+	overflow: auto;
 	
 	.gallery {
 		display: block;
@@ -136,24 +147,33 @@ footer {
 		color: $al_color;
 	}
 	.article_url {
-		float: right;
+		text-align: right;
 		padding-left: 20px;
+		float: right;
 		a { 
 			text-decoration: none;
 			color: $al_color;
+			font-size: 24px;
 		}
 	}
 	
 	.article_tags {
 		li {
+			background-color: #505960;
+			padding: 3px 10px;
 			float: right;
+			margin: 5px;
+			@include rounded;
 		}
+		
 	}
 	
 	.article_body {
 		float: left;
 		width: 670px;
 		padding: 0px 50px 20px 0;
+		color: $al_color;
+		line-height: 140%;
 	}
 	.article_summary {
 		float: right;
