@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>nathancrank.<%= @title %></title>
+    <title><%= title %></title>
     <%= csrf_meta_tag %>
+	<%= stylesheet_link_tag 'nathancrankdotcom.css.scss', :media => 'screen' %>
+	<%= stylesheet_link_tag 'reset.css', :media => 'screen' %>
   </head>
   <body>
+	<header>
+		<div class=container>
+			
+			<h1>Nathan</h1>
+			<h1>Crank</h1>
+			<nav>
+				<span class=nav_span>
+				<a href="portfolio" rel="Portfolio">Portfolio</a>
+				<a href="blog" rel="Blog">Blog</a>
+				<a href="contact" rel="Contact">Contact</a>
+				</span>
+			</nav>
+			
+		</div>
+	</header>
+	
     <%= yield %>
+
+	<footer>
+		<div class=container>
+			
+			<h1>Nathan</h1>
+			<h1>Crank</h1>
+			<nav>
+				<span class=nav_span>
+				<a href="portfolio" rel="Portfolio">Portfolio</a>
+				<a href="blog" rel="Blog">Blog</a>
+				<a href="contact" rel="Contact">Contact</a>
+				</span>
+			</nav>
+			
+		</div>
+	</footer>
+	
   </body>
 </html>
