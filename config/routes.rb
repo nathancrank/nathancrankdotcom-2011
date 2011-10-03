@@ -1,9 +1,12 @@
 Nathancrankdotcom::Application.routes.draw do
-  match '/', :to => 'pages#portfolio'
+  
+  root :to => 'pages#portfolio'
+  
   match '/portfolio', :to => 'pages#portfolio'
   match '/blog', :to => 'pages#blog'
   match '/contact', :to => 'pages#contact'
-
+  match '/admin/s3cr3t/signup', :to => 'pages#signup'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,17 +1,14 @@
 nathancrankdotcom  
 late 2011
-build A01001
+build A01002
 
 commit notes
 ============
 
 changes
 -------    
-- removed blueprint frameworks
-- began work on scss reset fork
-- changed header and foot links to use rails format
-- added logo and nav as new partial
-- added proper routing, / /portfolio /blog /contact all work now
+- added signup form (just a coming soon page currently)
+- fixed route (/) routing to use proper rails syntax
   
 known issues
 ------------   
@@ -19,8 +16,8 @@ known issues
 - rails testing (rspec)
 - adding rails calls
  
-###high priority
-- rails links not matched up
+###high priority  
+- 
 
 ###low priority
 - nav tags need ul and li items added for proper semantics in application.html.erb
