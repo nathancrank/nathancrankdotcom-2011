@@ -21,10 +21,15 @@ describe "LayoutLinks" do
     get '/contact'
     response.should have_selector('title', :content => "contact")
   end
-  
+
   it "should have a Sign Up page at '/admin/s3cr3t/signup'" do
     get '/admin/s3cr3t/signup'
-    response.should have_selector('title', :content => "secret.signup")
+    response.should have_selector('title', :content => "s3cr3t.signup")
+  end
+  
+  it "should have a Sign In page at '/admin/s3cr3t/signin'" do
+    get '/admin/s3cr3t/signin'
+    response.should have_selector('title', :content => "admin.signin")
   end
 
 end

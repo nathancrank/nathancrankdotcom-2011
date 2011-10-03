@@ -11,8 +11,8 @@ class PagesController < ApplicationController
     @title = "contact"
   end
   
-  def signup
-    @title = "signup"
+  def signin
+    @title = "admin.signin"
   end
 
 end

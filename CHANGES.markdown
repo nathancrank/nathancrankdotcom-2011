@@ -1,12 +1,17 @@
 nathancrankdotcom  
 late 2011
-build A01002
+build A01003
 
 commit notes
 ============
 
 changes
 -------    
+####A01003
+- added sign in and up pages
+- updated testing to actually pass, **oops A01002!**
+
+####A01002
 - added signup form (just a coming soon page currently)
 - fixed route (/) routing to use proper rails syntax
   
@@ -17,7 +22,7 @@ known issues
 - adding rails calls
  
 ###high priority  
-- 
+- none currently
 
 ###low priority
 - nav tags need ul and li items added for proper semantics in application.html.erb
