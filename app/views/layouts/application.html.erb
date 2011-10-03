@@ -5,147 +5,18 @@
     <%= csrf_meta_tag %>
 	<%= stylesheet_link_tag 'nathancrankdotcom.css.scss', :media => 'screen' %>
 	<%= stylesheet_link_tag 'nivo-slider.css', :media => 'screen' %>
+	<!--[if lt IE 8]><%= stylesheet_link_tag 'ie' %><![endif]-->
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 	<%= javascript_include_tag :jquery %>
 	<%= javascript_include_tag :jqns %>
-	<script type="text/javascript">
-	$(window).load(function() {
-	    $('#a1g').nivoSlider({
-	        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
-	        slices: 15, // For slice animations
-	        boxCols: 8, // For box animations
-	        boxRows: 4, // For box animations
-	        animSpeed: 700, // Slide transition speed
-	        pauseTime: 4000, // How long each slide will show
-	        startSlide: 0, // Set starting Slide (0 index)
-	        directionNav: false, // Next & Prev navigation
-	        directionNavHide: false, // Only show on hover
-	        controlNav: false, // 1,2,3... navigation
-	        controlNavThumbs: false, // Use thumbnails for Control Nav
-	        controlNavThumbsFromRel: false, // Use image rel for thumbs
-	        controlNavThumbsSearch: '.jpg', // Replace this with...
-	        controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
-	        keyboardNav: true, // Use left & right arrows
-	        pauseOnHover: false, // Stop animation while hovering
-	        manualAdvance: false, // Force manual transitions
-	        captionOpacity: 0.8, // Universal caption opacity
-	        prevText: 'Prev', // Prev directionNav text
-	        nextText: 'Next', // Next directionNav text
-	        beforeChange: function(){}, // Triggers before a slide transition
-	        afterChange: function(){}, // Triggers after a slide transition
-	        slideshowEnd: function(){}, // Triggers after all slides have been shown
-	        lastSlide: function(){}, // Triggers when last slide is shown
-	        afterLoad: function(){} // Triggers when slider has loaded
-	    });
-	});
-	</script>
-	<script type="text/javascript">
-	$(window).load(function() {
-	    $('#a2g').nivoSlider({
-	        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
-	        slices: 15, // For slice animations
-	        boxCols: 8, // For box animations
-	        boxRows: 4, // For box animations
-	        animSpeed: 700, // Slide transition speed
-	        pauseTime: 4000, // How long each slide will show
-	        startSlide: 0, // Set starting Slide (0 index)
-	        directionNav: false, // Next & Prev navigation
-	        directionNavHide: false, // Only show on hover
-	        controlNav: false, // 1,2,3... navigation
-	        controlNavThumbs: false, // Use thumbnails for Control Nav
-	        controlNavThumbsFromRel: false, // Use image rel for thumbs
-	        controlNavThumbsSearch: '.jpg', // Replace this with...
-	        controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
-	        keyboardNav: true, // Use left & right arrows
-	        pauseOnHover: false, // Stop animation while hovering
-	        manualAdvance: false, // Force manual transitions
-	        captionOpacity: 0.8, // Universal caption opacity
-	        prevText: 'Prev', // Prev directionNav text
-	        nextText: 'Next', // Next directionNav text
-	        beforeChange: function(){}, // Triggers before a slide transition
-	        afterChange: function(){}, // Triggers after a slide transition
-	        slideshowEnd: function(){}, // Triggers after all slides have been shown
-	        lastSlide: function(){}, // Triggers when last slide is shown
-	        afterLoad: function(){} // Triggers when slider has loaded
-	    });
-	});
-	</script>
-	<script type="text/javascript">
-	$(window).load(function() {
-	    $('#a3g').nivoSlider({
-	        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
-	        slices: 15, // For slice animations
-	        boxCols: 8, // For box animations
-	        boxRows: 4, // For box animations
-	        animSpeed: 700, // Slide transition speed
-	        pauseTime: 4000, // How long each slide will show
-	        startSlide: 0, // Set starting Slide (0 index)
-	        directionNav: false, // Next & Prev navigation
-	        directionNavHide: false, // Only show on hover
-	        controlNav: false, // 1,2,3... navigation
-	        controlNavThumbs: false, // Use thumbnails for Control Nav
-	        controlNavThumbsFromRel: false, // Use image rel for thumbs
-	        controlNavThumbsSearch: '.jpg', // Replace this with...
-	        controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
-	        keyboardNav: true, // Use left & right arrows
-	        pauseOnHover: false, // Stop animation while hovering
-	        manualAdvance: false, // Force manual transitions
-	        captionOpacity: 0.8, // Universal caption opacity
-	        prevText: 'Prev', // Prev directionNav text
-	        nextText: 'Next', // Next directionNav text
-	        beforeChange: function(){}, // Triggers before a slide transition
-	        afterChange: function(){}, // Triggers after a slide transition
-	        slideshowEnd: function(){}, // Triggers after all slides have been shown
-	        lastSlide: function(){}, // Triggers when last slide is shown
-	        afterLoad: function(){} // Triggers when slider has loaded
-	    });
-	});
-	</script>
-	<script type="text/javascript">
-	$(window).load(function() {
-	    $('#a4g').nivoSlider({
-	        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
-	        slices: 15, // For slice animations
-	        boxCols: 8, // For box animations
-	        boxRows: 4, // For box animations
-	        animSpeed: 700, // Slide transition speed
-	        pauseTime: 4000, // How long each slide will show
-	        startSlide: 0, // Set starting Slide (0 index)
-	        directionNav: false, // Next & Prev navigation
-	        directionNavHide: false, // Only show on hover
-	        controlNav: false, // 1,2,3... navigation
-	        controlNavThumbs: false, // Use thumbnails for Control Nav
-	        controlNavThumbsFromRel: false, // Use image rel for thumbs
-	        controlNavThumbsSearch: '.jpg', // Replace this with...
-	        controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
-	        keyboardNav: true, // Use left & right arrows
-	        pauseOnHover: false, // Stop animation while hovering
-	        manualAdvance: false, // Force manual transitions
-	        captionOpacity: 0.8, // Universal caption opacity
-	        prevText: 'Prev', // Prev directionNav text
-	        nextText: 'Next', // Next directionNav text
-	        beforeChange: function(){}, // Triggers before a slide transition
-	        afterChange: function(){}, // Triggers after a slide transition
-	        slideshowEnd: function(){}, // Triggers after all slides have been shown
-	        lastSlide: function(){}, // Triggers when last slide is shown
-	        afterLoad: function(){} // Triggers when slider has loaded
-	    });
-	});
-	</script>
+	<%= javascript_include_tag :gallery %>
   </head>
   <body>
 	<header>
 		<div class=container>
-			
-			<h1>Nathan</h1>
-			<h1>Crank</h1>
-			<nav>
-				<span class=nav_span>
-				<a href="portfolio" rel="Portfolio">Portfolio</a>
-				<a href="blog" rel="Blog">Blog</a>
-				<a href="contact" rel="Contact">Contact</a>
-				</span>
-			</nav>
-			
+			<%= render 'layouts/logo' %>
 		</div>
 	</header>
 	
@@ -153,17 +24,7 @@
 
 	<footer>
 		<div class=container>
-			
-			<h1>Nathan</h1>
-			<h1>Crank</h1>
-			<nav>
-				<span class=nav_span>
-				<a href="portfolio" rel="Portfolio">Portfolio</a>
-				<a href="blog" rel="Blog">Blog</a>
-				<a href="contact" rel="Contact">Contact</a>
-				</span>
-			</nav>
-			
+			<%= render 'layouts/logo' %>
 		</div>
 	</footer>
 	

@@ -1,0 +1,25 @@
+require 'spec_helper'
+
+describe "LayoutLinks" do
+
+  it "should have a Portfolio page at '/'" do
+    get '/'
+    response.should have_selector('title', :content => "portfolio")
+  end
+  
+  it "should have a Portfolio page at '/portfolio'" do
+    get '/'
+    response.should have_selector('title', :content => "portfolio")
+  end
+
+  it "should have an Blog page at '/blog'" do
+    get '/blog'
+    response.should have_selector('title', :content => "blog")
+  end
+
+  it "should have a Contact page at '/contact'" do
+    get '/contact'
+    response.should have_selector('title', :content => "contact")
+  end
+
+end
