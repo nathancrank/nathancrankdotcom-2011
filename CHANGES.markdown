@@ -1,17 +1,23 @@
 nathancrankdotcom  
 late 2011
-build A01004
+build A01005
 
 commit notes
 ============
 
 changes
--------    
+-------      
+####A01005  
+-   
+
 ####A01004
 - moved to new branch (modeling-users)
 - added user model
 - installed gem annotate
 - moved sign in and up pages to user controller
+- merge back into master branch
+- published to heroku for first launch
+- updated readme (as though that really matters)
 
 ####A01003
 - added sign in and up pages
