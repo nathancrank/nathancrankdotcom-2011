@@ -1,12 +1,18 @@
 nathancrankdotcom  
 late 2011
-build A01003
+build A01004
 
 commit notes
 ============
 
 changes
 -------    
+####A01004
+- moved to new branch (modeling-users)
+- added user model
+- installed gem annotate
+- moved sign in and up pages to user controller
+
 ####A01003
 - added sign in and up pages
 - updated testing to actually pass, **oops A01002!**

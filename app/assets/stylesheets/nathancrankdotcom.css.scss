@@ -139,6 +139,14 @@ footer {
 	background-color: $abg_color;
 	overflow: auto;
 	
+	p {
+		padding-top: 1em;
+		text-indent: 1.5em;
+	}
+	p:first-child {
+		padding-top: 0;
+		text-indent: 0em;
+	}
 	
 	.article_header {
 		@include leaguegothic;
@@ -151,6 +159,9 @@ footer {
 		padding-left: 20px;
 		display: block;
 		margin-top: 15px;
+		text-decoration: none;
+		color: $al_color;
+		font-size: 24px;
 		a { 
 			text-decoration: none;
 			color: $al_color;
