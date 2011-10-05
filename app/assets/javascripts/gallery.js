@@ -4,8 +4,8 @@ $(window).load(function() {
         slices: 15, // For slice animations
         boxCols: 8, // For box animations
         boxRows: 4, // For box animations
-        animSpeed: 700, // Slide transition speed
-        pauseTime: 4000, // How long each slide will show
+        animSpeed: 1000, // Slide transition speed
+        pauseTime: 8000, // How long each slide will show
         startSlide: 0, // Set starting Slide (0 index)
         directionNav: false, // Next & Prev navigation
         directionNavHide: false, // Only show on hover
@@ -33,8 +33,8 @@ $(window).load(function() {
         slices: 15, // For slice animations
         boxCols: 8, // For box animations
         boxRows: 4, // For box animations
-        animSpeed: 700, // Slide transition speed
-        pauseTime: 4000, // How long each slide will show
+        animSpeed: 1000, // Slide transition speed
+        pauseTime: 8000, // How long each slide will show
         startSlide: 0, // Set starting Slide (0 index)
         directionNav: false, // Next & Prev navigation
         directionNavHide: false, // Only show on hover
@@ -62,8 +62,8 @@ $(window).load(function() {
         slices: 15, // For slice animations
         boxCols: 8, // For box animations
         boxRows: 4, // For box animations
-        animSpeed: 700, // Slide transition speed
-        pauseTime: 4000, // How long each slide will show
+        animSpeed: 1000, // Slide transition speed
+        pauseTime: 8000, // How long each slide will show
         startSlide: 0, // Set starting Slide (0 index)
         directionNav: false, // Next & Prev navigation
         directionNavHide: false, // Only show on hover
@@ -91,8 +91,8 @@ $(window).load(function() {
         slices: 15, // For slice animations
         boxCols: 8, // For box animations
         boxRows: 4, // For box animations
-        animSpeed: 700, // Slide transition speed
-        pauseTime: 4000, // How long each slide will show
+        animSpeed: 1000, // Slide transition speed
+        pauseTime: 8000, // How long each slide will show
         startSlide: 0, // Set starting Slide (0 index)
         directionNav: false, // Next & Prev navigation
         directionNavHide: false, // Only show on hover

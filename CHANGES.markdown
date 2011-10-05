@@ -8,7 +8,8 @@ commit notes
 changes
 -------      
 ####A01005  
-- works with heroku properly now  
+- works with heroku properly now
+- static portfolio page complete  
 
 ####A01004
 - moved to new branch (modeling-users)
@@ -34,7 +35,7 @@ known issues
 - adding rails calls
  
 ###high priority  
-- none currently
+- pages are basically static!
 
 ###low priority
 - nav tags need ul and li items added for proper semantics in application.html.erb

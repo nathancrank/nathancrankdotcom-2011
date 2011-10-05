@@ -56,23 +56,22 @@ body {
 	h1 {
 		font-size: 339px;
 		color: #ddd;
+		a {
+			color: #ddd;
+			text-decoration: none;
+		}
+		a:visited {
+			color: #ddd;
+		}
+		a:hover {
+			color: #ddd;
+		}
 	}
 }
 
 .container {
 	margin: 0 auto;
-}
-@media all and (min-width: 1200px) {
-	.container {
-		width: 1200px;
-		margin: 0 auto;
-	}
-}
-@media all and (max-width: 1200px) {
-	.container {
-		width: 600px;
-		margin: 0 auto;
-	}
+	width: 1200px;
 }
 
 
@@ -169,22 +168,6 @@ footer {
 		}
 	}
 	
-	.article_tags {
-		display: block;
-		li {
-			background-color: #505960;
-			padding: 3px 10px;
-			float: left;
-			margin: 10px 10px 0 0;
-			@include rounded;
-			color: #fff;
-			font-weight: lighter;
-			font-size: 12px;
-			line-height: 140%;
-			border: 1px solid #888;
-		}
-		
-	}
 	
 	.article_body {
 		float: left;
