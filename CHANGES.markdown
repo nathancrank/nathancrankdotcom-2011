@@ -8,7 +8,7 @@ commit notes
 changes
 -------      
 ####A01005  
--   
+- works with heroku properly now  
 
 ####A01004
 - moved to new branch (modeling-users)
