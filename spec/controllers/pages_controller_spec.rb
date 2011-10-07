@@ -47,5 +47,21 @@ describe PagesController do
                         :content => ".contact")
     end
   end
-
+  
+#Test Resume Page
+  describe "GET 'resume'" do
+    #Test existence
+    it "should be successful" do
+      get 'resume'
+      response.should be_success
+    end
+    #Test title
+    it "should have the right title" do
+      get 'resume'
+      response.should have_selector("title",
+                        :content => ".resume")
+    end
+  end
+  
+#we need to have a signin
 end

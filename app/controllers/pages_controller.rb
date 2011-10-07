@@ -11,8 +11,13 @@ class PagesController < ApplicationController
     @title = "contact"
   end
   
+  #does this need to be here anymore?
   def signin
     @title = "admin.signin"
+  end
+  
+  def resume
+    @title = "resume"
   end
 
 end

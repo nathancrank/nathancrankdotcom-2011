@@ -4,6 +4,7 @@
     <title><%= title %></title>
     <%= csrf_meta_tag %>
 	<%= stylesheet_link_tag 'nathancrankdotcom.css.scss', :media => 'screen' %>
+	<%= stylesheet_link_tag 'print.css.scss', :media => 'print' %>
 	<%= stylesheet_link_tag 'nivo-slider.css', :media => 'screen' %>
 	<!--[if lt IE 8]><%= stylesheet_link_tag 'ie' %><![endif]-->
 	<!--[if lt IE 9]>
@@ -22,11 +23,18 @@
 	
     <%= yield %>
 
+
+	<% if @title == 'resume' %>
+	
+	<% else %>
 	<footer>
 		<div class=container>
 			<%= render 'layouts/logo' %>
 		</div>
 	</footer>
+	<% end %>
+	
+	
 	
   </body>
 </html>

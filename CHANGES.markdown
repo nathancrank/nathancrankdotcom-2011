@@ -36,6 +36,9 @@ known issues
  
 ###high priority  
 - pages are basically static!
+- firefox css adjustments
+- IE css adjustments
+- adding analytics
 
 ###low priority
 - nav tags need ul and li items added for proper semantics in application.html.erb
