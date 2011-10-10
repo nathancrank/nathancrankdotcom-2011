@@ -9,7 +9,6 @@ $color_two: #404f6d;
 $leagueset: LeagueGothicRegular, Helvetica, Arial;
 
 @import "reset.css.scss";
-@import "mediaqueries.css.scss";
 
 
 /*
@@ -232,7 +231,6 @@ article:nth-child(even) {
 }
 
 .resume_button {
-	width: 288px;
 	border: 1px solid $color_one;
 	text-align: center;
 	@include leaguegothic;
@@ -246,3 +244,5 @@ article:nth-child(even) {
 		color: $dark_color;
 	}
 }
+
+@import "mediaqueries.css.scss";
