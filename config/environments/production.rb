@@ -60,4 +60,3 @@ Nathancrankdotcom::Application.configure do
   
   
 end
-Sass::Plugin.options[:never_update] = true
