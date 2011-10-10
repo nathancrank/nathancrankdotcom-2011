@@ -9,6 +9,7 @@ $color_two: #404f6d;
 $leagueset: LeagueGothicRegular, Helvetica, Arial;
 
 @import "reset.css.scss";
+@import "mediaqueries.css.scss";
 
 
 /*
@@ -71,10 +72,7 @@ body {
 	}
 }
 
-.container {
-	margin: 0 auto;
-	width: 1200px;
-}
+
 
 
 @mixin banner($bg_color, $lk_color) {
