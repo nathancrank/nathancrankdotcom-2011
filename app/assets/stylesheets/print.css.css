@@ -1,3 +1,4 @@
+/* only tested on resume page right now */
 /* this is all still very messy */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -667,3 +668,72 @@ only screen and (min-device-pixel-ratio : 1.5) {
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out; }
+
+.container {
+  margin: 0 auto;
+  width: 600px; }
+
+header {
+  background-color: #fff;
+  text-align: right;
+  height: 70px; }
+  header .nav_span {
+    display: none; }
+  header h1:first-child {
+    font-size: 24px;
+    display: inline-block; }
+  header h1:nth-child(2) {
+    font-size: 24px;
+    display: inline-block; }
+
+footer {
+  background-color: #fff;
+  text-align: right;
+  height: 100px; }
+  footer .nav_span {
+    display: none; }
+  footer h1:first-child {
+    font-size: 24px;
+    display: inline-block; }
+  footer h1:nth-child(2) {
+    font-size: 24px;
+    display: inline-block; }
+
+.resume {
+  padding-top: 5px;
+  font-size: 12px; }
+  .resume #email {
+    display: block; }
+  .resume .column_one {
+    float: left;
+    width: 250px; }
+  .resume .column_two {
+    float: right;
+    width: 250px; }
+  .resume h2 {
+    text-align: center;
+    font: 24px LeagueGothicRegular, Helvetica, Arial;
+    color: #404f6d; }
+    .resume h2 a {
+      color: #404f6d;
+      text-decoration: none; }
+  .resume h3 {
+    font: 18px LeagueGothicRegular, Helvetica, Arial;
+    padding-top: 5px; }
+  .resume h4 {
+    font: 13px LeagueGothicRegular, Helvetica, Arial;
+    color: #404f6d; }
+  .resume h5 {
+    font: 13px LeagueGothicRegular, Helvetica, Arial;
+    color: #404f6d; }
+  .resume ul {
+    padding: 0; }
+  .resume li {
+    font-size: 11px;
+    text-height: 1em; }
+
+.print_hide {
+  display: none; }
+
+footer {
+  display: none; }

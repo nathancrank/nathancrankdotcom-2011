@@ -26,7 +26,7 @@ and (max-device-width : 480px) {
     text-transform: uppercase;
     line-height: 80%;
     font-size: 136px;
-    padding-top: 50px; }
+    padding-top: 150px; }
   footer h1:nth-child(2) {
     color: #404f6d;
     font-family: LeagueGothicRegular, Helvetica, Arial;
@@ -34,12 +34,12 @@ and (max-device-width : 480px) {
     line-height: 80%;
     font-size: 165px; }
   footer nav {
-    margin-top: -130px;
+    margin-top: -145px;
     font-size: 30px; }
 
   .container {
     margin: 0 auto;
-    width: 320px;
+    width: 720px;
     padding: 0 50px; }
     .container .article_body {
       width: 100%;
