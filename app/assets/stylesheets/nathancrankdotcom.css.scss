@@ -149,12 +149,9 @@ footer {
 	
 	.article_header {
 		@include leaguegothic;
-		text-align: right;
-		font-size: 70px;
 		color: $al_color;
 	}
 	.article_url {
-		text-align: right;
 		padding-left: 20px;
 		display: block;
 		margin-top: 15px;
@@ -171,14 +168,9 @@ footer {
 	
 	.article_body {
 		float: left;
-		width: 670px;
 		padding: 0px 50px 20px 0;
 		color: $al_color;
 		line-height: 170%;
-	}
-	.article_summary {
-		float: right;
-		width: 480px;
 	}
 }
 
@@ -197,14 +189,6 @@ article:nth-child(even) {
 		display: none;
 	}
 	
-	.column_one {
-		float: left;
-		width: 550px;
-	}
-	.column_two {
-		float: right;
-		width: 550px;
-	}
 	
 	h2 {
 		text-align: center;
