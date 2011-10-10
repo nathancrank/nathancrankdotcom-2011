@@ -93,7 +93,7 @@
     width:1200px; /* Change this to your images width */
     /* height:246px; Change this to your images height */
     background:url(images/loading.gif) no-repeat 50% 50%;
-	margin: 50px 0;
+	margin: 0 0 50px 0;
 	border: 0px solid #aaa;
 }
 .nivoSlider img {

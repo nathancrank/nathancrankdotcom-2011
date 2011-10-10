@@ -136,7 +136,7 @@ footer {
 
 
 @mixin article($al_color, $abg_color) {	
-	padding: 0 0 50px 0;
+	padding: 50px 0 50px 0;
 	background-color: $abg_color;
 	overflow: auto;
 	
@@ -248,4 +248,20 @@ article:nth-child(even) {
 
 .headeremail {
 	@include leaguegothic;
+}
+
+.resume_button {
+	width: 288px;
+	border: 1px solid $color_one;
+	text-align: center;
+	@include leaguegothic;
+	font-size: 42px;
+	float: right;
+	background-color: $light_color;
+	padding: 10px 50px;
+	
+	a {
+		text-decoration: none;
+		color: $dark_color;
+	}
 }
