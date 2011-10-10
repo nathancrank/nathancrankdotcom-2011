@@ -1,4 +1,18 @@
+$dark_color: #1c242a;
+$light_color: #fff;
+$color_one: #acc0c7;
+$color_two: #404f6d;
 
+$leagueset: LeagueGothicRegular, Helvetica, Arial;
+
+@mixin headerh1 {
+	@include leaguegothic;
+	text-transform: uppercase;
+	line-height: 80%;
+}
+@mixin leaguegothic {
+	font-family: $leagueset;
+}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px)
