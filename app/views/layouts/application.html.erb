@@ -3,15 +3,15 @@
   <head>
     <title><%= title %></title>
     <%= csrf_meta_tag %>
+	<%= stylesheet_link_tag 'flexslider.css', :media => 'screen' %>
 	<%= stylesheet_link_tag 'nathancrankdotcom.css.scss', :media => 'screen' %>
 	<%= stylesheet_link_tag 'print.css.scss', :media => 'print' %>
-	<%= stylesheet_link_tag 'nivo-slider.css', :media => 'screen' %>
 	<!--[if lt IE 8]><%= stylesheet_link_tag 'ie' %><![endif]-->
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<%= javascript_include_tag :jquery %>
-	<%= javascript_include_tag :jqns %>
+	<%= javascript_include_tag :flexslider %>
 	<%= javascript_include_tag :gallery %>
   </head>
   <body>
@@ -24,15 +24,11 @@
     <%= yield %>
 
 
-	<% if @title == 'resume' or @title == 'coverletter' %>
-	
-	<% else %>
 	<footer>
 		<div class=container>
 			<%= render 'layouts/logo' %>
 		</div>
 	</footer>
-	<% end %>
 	
 	
 	

@@ -1,6 +1,8 @@
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
-and (min-device-width : 320px) {
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
 /* Styles */
 	header {
 		h1:first-child {
@@ -15,7 +17,7 @@ and (min-device-width : 320px) {
 			font-size: 165px;
 		}
 		nav {
-			margin-top: -130px;	
+			margin-top: -145px;	
 			font-size: 30px;
 		}
 	}
@@ -39,14 +41,7 @@ and (min-device-width : 320px) {
 	.container {
 		margin: 0 auto;
 		width: 320px;
-		
-		.nivoSlider {
-			width: 100%;
-			height: 500px;
-			img {
-				width: 100%;
-			}
-		}
+		padding: 0 50px;
 		
 		.article_body {
 			width: 100%;
@@ -137,19 +132,13 @@ footer {
 }
 	.container {
 		margin: 0 auto;
-		
-		.nivoSlider {
-			width: 100%;
-			height: 500px;
-			img {
-				width: 100%;
-			}
-		}
+
 		
 	}
 	.resume_button {
 		width: 288px;
 	}
+	
 	
 }
 
@@ -271,14 +260,6 @@ footer {
 		margin: 0 auto;
 		width: 1200px;
 		
-		.nivoSlider {
-			width: 100%;
-			height: 500px;
-			img {
-				width: 100%;
-			}
-		}
-		
 		.article_body {
 			width: 670px;
 		}
@@ -312,7 +293,7 @@ footer {
 
 /* medium Desktops and laptops ----------- */
 @media only screen 
-and (min-width : 1024px)
+and (min-width : 984px)
 and (max-width : 1224px) {
 /* Styles */
 header {
@@ -351,18 +332,11 @@ footer {
 }
 	.container {
 		margin: 0 auto;
-		width: 900px;
-		
-		.nivoSlider {
-			width: 100%;
-			height: 500px;
-			img {
-				width: 100%;
-			}
-		}
+		max-width: 1200px;
+		padding: 0 50px;
 		
 		.article_body {
-			width: 400px;
+			max-width: 500px;
 		}
 		.article_header {
 			text-align: right;
@@ -373,7 +347,7 @@ footer {
 		}
 		.article_summary {
 			float: right;
-			width: 430px;
+			width: 330px;
 		}
 	}
 	.resume_button {
@@ -382,11 +356,11 @@ footer {
 	.resume {
 		.column_one {
 			float: left;
-			width: 550px;
+			max-width: 450px;
 		}
 		.column_two {
-			float: left;
-			width: 550px;
+			float: right;
+			max-width: 450px;
 		}
 	}
 }
@@ -452,11 +426,6 @@ footer {
 	.container {
 		margin: 0 auto;
 		width: 790px;
-		
-		.nivoSlider {
-			width: 100%;
-			height: 500px;
-		}
 		
 		.article_body {
 			width: 100%;
