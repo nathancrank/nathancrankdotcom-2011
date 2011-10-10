@@ -1,0 +1,87 @@
+/* only tested on resume page right now */
+
+@import "nathancrankdotcom.css.scss";
+
+.container {
+	margin: 0 auto;
+	width: 600px;
+}
+
+
+@mixin banner($bg_color, $lk_color) {
+	background-color: #fff;
+	text-align: right;
+	
+
+	.nav_span {
+		display: none;
+	}
+	h1:first-child {
+		font-size: 24px;
+		display: inline-block;
+	}
+	h1:nth-child(2) {
+		font-size: 24px;
+		display: inline-block;
+	}
+}
+
+header {
+	@include banner($dark_color, $light_color);
+	height: 70px;
+}
+
+footer {
+	@include banner($light_color, $dark_color);
+	height: 100px;
+}
+
+.resume {
+	padding-top: 5px;
+	font-size: 12px;
+	
+	#email {
+		display: block;
+	}	
+	.column_one {
+		float: left;
+		width: 250px;
+	}
+	.column_two {
+		float: right;
+		width: 250px;
+	}
+	
+	h2 {
+		text-align: center;
+		font: 24px $leagueset;
+		color: $color-two;
+		a {
+			color: $color-two;
+			text-decoration: none;
+		}
+	}
+	h3 {
+		font: 18px $leagueset;
+		padding-top: 5px;		
+	}
+	h4 {
+		font: 13px $leagueset;
+		color: $color_two;
+	}
+	h5 {
+		font: 13px $leagueset;
+		color: $color_two;
+	}
+	ul {
+		padding: 0;
+	}
+	li {
+		font-size: 11px;
+		text-height: 1em;
+	}
+}
+
+.print_hide {
+	display: none;
+}
