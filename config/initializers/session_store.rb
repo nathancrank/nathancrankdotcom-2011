@@ -1,6 +1,6 @@
 # Be sure to restart your server when you modify this file.
 
-Nathancrankdotcom::Application.config.session_store :cookie_store, key: '_nathancrankdotcom_session'
+Nathancrankdotcom::Application.config.session_store :cookie_store, :key => '_nathancrankdotcom_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information

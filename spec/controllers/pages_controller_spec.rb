@@ -63,5 +63,20 @@ describe PagesController do
     end
   end
   
+#Test Cover Letter Page
+  describe "GET 'coverletter'" do
+    #Test existence
+    it "should be successful" do
+      get 'coverletter'
+      response.should be_success
+    end
+    #Test title
+    it "should have the right title" do
+      get 'coverletter'
+      response.should have_selector("title",
+                        :content => ".coverletter")
+    end
+  end
+  
 #we need to have a signin
 end

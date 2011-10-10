@@ -2,7 +2,7 @@
 
 
 $dark_color: #1c242a;
-$light_color: #fefefe;
+$light_color: #fff;
 $color_one: #acc0c7;
 $color_two: #404f6d;
 
@@ -196,8 +196,8 @@ article:nth-child(even) {
 	
 	#email {
 		float: right;
-		margin-top: -25px;
 		color: $dark_color;
+		display: none;
 	}
 	
 	.column_one {
@@ -211,8 +211,9 @@ article:nth-child(even) {
 	
 	h2 {
 		text-align: center;
-		font: 82px $leagueset;
+		font: 62px $leagueset;
 		clear: both;
+		color: $color_two;
 		
 		a {
 			color: $color-two;
@@ -242,4 +243,8 @@ article:nth-child(even) {
 	#skills {
 		color: $color_two;
 	}
+}
+
+.headeremail {
+	@include leaguegothic;
 }

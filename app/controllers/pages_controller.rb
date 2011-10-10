@@ -19,5 +19,9 @@ class PagesController < ApplicationController
   def resume
     @title = "resume"
   end
+  
+  def coverletter
+    @title = "coverletter"
+  end
 
 end
