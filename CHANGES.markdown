@@ -1,12 +1,17 @@
 nathancrankdotcom  
 late 2011
-build A01005
+build A01006
 
 commit notes
 ============
 
 changes
--------      
+-------   
+  
+####A01006
+- corrected spelling errors (how embarrassing!)
+- removed lindsayandgareth.com from resume (didn't seem appropriate under reconsideration)  
+   
 ####A01005  
 - works with heroku properly now
 - static portfolio page complete  
@@ -32,7 +37,6 @@ known issues
 ------------   
 ###focus areas
 - rails testing (rspec)
-- adding rails calls
  
 ###high priority  
 - pages are basically static!
@@ -43,5 +47,8 @@ known issues
 ###low priority
 - nav tags need ul and li items added for proper semantics in application.html.erb
 - media queries are completely incomplete, currently only changes .container width, probably does not work in all browsers equally, certainly not tested.
+- media queries sort of work on android, but not perfectly.
+- basically overhaul media querie code
+- and while we're on it, comment and organize the css better
 - Only tested in Safari with any completeness
 - logo only works in safari perfectly
