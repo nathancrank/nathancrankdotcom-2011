@@ -10,7 +10,7 @@ This is the code for my website, as it is posted on the internet currently. I fi
   
 Some day I might actually make something out of this file.    
   
-I can't imagine the whole of it being particularly useful for anyone, however snippets of it might be useful for those getting started with rails (like myself!).
+I can't imagine the whole of what im releasing being particularly useful for anyone, however snippets of it might be useful for those getting started with rails (like myself!).
   
 License  
 ========  
