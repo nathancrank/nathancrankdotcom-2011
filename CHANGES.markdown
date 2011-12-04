@@ -1,12 +1,15 @@
 nathancrankdotcom  
 late 2011
-build A01006
+build A01007
 
 commit notes
 ============
 
 changes
--------   
+-------  
+
+####A01007
+- added google analytics support 
   
 ####A01006
 - corrected spelling errors (how embarrassing!)
