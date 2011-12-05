@@ -8,11 +8,14 @@ $light_color: #fff;
 $color_one: #acc0c7;
 $color_two: #404f6d;
 /* font sets */
-$leagueset: LeagueGothicRegular, Helvetica, Arial;
+$leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial;
 
 /* reset */
 @import "reset.css.scss";
+/* dozen framework */
 @import "dozen/dozen.css.scss";
+/* semantic grid */
+@import "grid.css.scss";
 
 /* import fonts */
 /* league gothic */
@@ -25,6 +28,14 @@ $leagueset: LeagueGothicRegular, Helvetica, Arial;
          url('leaguegothic/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+/* container properties */
+.container {
+	margin: 0 auto;
+	max-width: 1300px;
+	padding: 0 50px;
+
 }
 
 /* coming soon template */
@@ -109,11 +120,41 @@ $leagueset: LeagueGothicRegular, Helvetica, Arial;
 /* actual header code */
 header {
 	@include banner($dark_color, $light_color);
+	h1:first-child {
+		color: $color_one;
+		@include headerh1;
+		font-size: 177px;
+		padding-top: 50px;
+	}
+	h1:nth-child(2) {
+		color: $color_two;
+		@include headerh1;
+		font-size: 214px;
+	}
+	nav {
+		margin-top: -195px;	
+		font-size: 43px;
+	}
 }
 
 /* actual footer code */
 footer {
 	@include banner($light_color, $dark_color);
+	h1:first-child {
+		color: $color_one;
+		@include headerh1;
+		font-size: 177px;
+		padding-top: 50px;
+	}
+	h1:nth-child(2) {
+		color: $color_two;
+		@include headerh1;
+		font-size: 214px;
+	}
+	nav {
+		margin-top: -195px;	
+		font-size: 43px;
+	}
 }
 
 /* article mixin */
@@ -124,7 +165,7 @@ footer {
 	overflow: auto;
 	
 	p {
-		padding-top: 1em;
+		padding-bottom: 0.5em;
 		text-indent: 1.5em;
 		
 		a {
@@ -141,7 +182,24 @@ footer {
 	.article_header {
 		font-family: $leagueset;
 		color: $af_color;
-		@include animate;
+		font-size: 4.5em;
+	}
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) {
+	/* Styles */
+		.article_header h2 {
+			font-size: 1.5em;
+		}
+	}
+	/* smartphones */
+	@media only screen 
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		.article_header h2 {
+			font-size: 1.5em;
+		}
 	}
 	.article_url {
 		padding-left: 20px;
@@ -162,6 +220,25 @@ footer {
 		float: left;
 		color: $af_color;
 		line-height: 170%;
+		font-size: 1em;
+		text-align: justify;
+	}
+	/* smartphones */
+	@media only screen 
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		.article_body {
+			font-size: 1.8em;
+		}
+	}
+	/* iPads (portrait) */
+	@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) 
+	and (orientation : portrait) {
+		.article_body {
+			font-size: 1.3em;
+		}
 	}
 }
 
@@ -171,6 +248,19 @@ article:nth-child(odd) {
 }
 article:nth-child(even) {
 	@include article($dark_color, $light_color);
+}
+.article_body {
+	@include column(7);
+}
+.article_header {
+	text-align: right;
+	font-size: 70px;
+}
+.article_url {
+	text-align: right;
+}
+.article_summary {
+	@include column(5);
 }
 
 /* resume styling */
@@ -220,7 +310,24 @@ article:nth-child(even) {
 	
 }
 
-/* resume button at bottom of page */
+/* connect buttons at bottom of page */
+.connect_button {
+	border: 1px solid $color_one;
+	text-align: center;
+	font-family: $leagueset;
+	font-size: 42px;
+	float: right;
+	background-color: $light_color;
+	padding: 10px 10px;
+	margin: 0 0 0 50px;
+	
+	a {
+		text-decoration: none;
+		color: $dark_color;
+	}
+	width: 149px;
+}
+
 .resume_button {
 	border: 1px solid $color_one;
 	text-align: center;
@@ -234,7 +341,16 @@ article:nth-child(even) {
 		text-decoration: none;
 		color: $dark_color;
 	}
+	width: 288px;
 }
 
-/* media queries are currently in another file, they need to be moved inline to be more manageable */
-@import "mediaqueries.css.scss";
+/* resume page */
+.resume {
+	.column_one {
+		@include column(5);
+	}
+	.column_two {
+		@include column(5);
+		float: right;
+	}
+}
