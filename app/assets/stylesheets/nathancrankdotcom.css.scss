@@ -1,23 +1,21 @@
 /* this is all still very messy */
 
-
+/* set variables */
+/* main two colors for background */
 $dark_color: #1c242a;
 $light_color: #fff;
+/* logo colors */
 $color_one: #acc0c7;
 $color_two: #404f6d;
-
+/* font sets */
 $leagueset: LeagueGothicRegular, Helvetica, Arial;
 
+/* reset */
 @import "reset.css.scss";
+@import "dozen/dozen.css.scss";
 
-
-@mixin animate {
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-}
-
-/* Importing League Gothic */
+/* import fonts */
+/* league gothic */
 @font-face {
     font-family: 'LeagueGothicRegular';
     src: url('leaguegothic/league_gothic-webfont.eot');
@@ -29,29 +27,9 @@ $leagueset: LeagueGothicRegular, Helvetica, Arial;
     font-style: normal;
 }
 
-body {
-	font-family: Helvetica, Arial;
-	font-weight: light;
-}
-
-@mixin leaguegothic {
-	font-family: $leagueset;
-}
-
-@mixin rounded($radius: 5px) {
-  border-radius: $radius;
-  -moz-border-radius: $radius;
-  -webkit-border-radius: $radius;
-}
-
-@mixin headerh1 {
-	@include leaguegothic;
-	text-transform: uppercase;
-	line-height: 80%;
-}
-
+/* coming soon template */
 .coming_soon {
-	@include leaguegothic;
+	font-family: $leagueset;
 	margin-top: 50px;
 	text-align: right;
 	font-weight: bolder;
@@ -71,9 +49,14 @@ body {
 	}
 }
 
+/* banner h1 mixin */
+@mixin headerh1 {
+	font-family: $leagueset;
+	text-transform: uppercase;
+	line-height: 80%;
+}
 
-
-
+/* header and footer banner mixin */
 @mixin banner($bg_color, $lk_color) {
 	background-color: $bg_color;
 	text-align: right;
@@ -101,7 +84,7 @@ body {
 	a {
 		color: $lk_color;
 		text-decoration: none;
-		@include leaguegothic;
+		font-family: $leagueset;
 		text-transform: capitalize;
 	}
 	a:first-child {
@@ -123,16 +106,19 @@ body {
 	}
 }
 
+/* actual header code */
 header {
 	@include banner($dark_color, $light_color);
 }
 
+/* actual footer code */
 footer {
 	@include banner($light_color, $dark_color);
 }
 
-
-@mixin article($al_color, $abg_color) {	
+/* article mixin */
+@mixin article($af_color, $abg_color) {	
+	/* af_color is font color, abg_color is background color */
 	padding: 50px 0 50px 0;
 	background-color: $abg_color;
 	overflow: auto;
@@ -153,8 +139,8 @@ footer {
 	}
 	
 	.article_header {
-		@include leaguegothic;
-		color: $al_color;
+		font-family: $leagueset;
+		color: $af_color;
 		@include animate;
 	}
 	.article_url {
@@ -162,7 +148,7 @@ footer {
 		display: block;
 		margin-top: 15px;
 		text-decoration: none;
-		color: $al_color;
+		color: $af_color;
 		font-size: 24px;
 		a { 
 			text-decoration: none;
@@ -174,11 +160,12 @@ footer {
 	
 	.article_body {
 		float: left;
-		color: $al_color;
+		color: $af_color;
 		line-height: 170%;
 	}
 }
 
+/* actual article code, odd and even children alternate colors */
 article:nth-child(odd) {
 	@include article($light_color, $dark_color);
 }
@@ -186,6 +173,7 @@ article:nth-child(even) {
 	@include article($dark_color, $light_color);
 }
 
+/* resume styling */
 .resume {
 	
 	#email {
@@ -232,14 +220,11 @@ article:nth-child(even) {
 	
 }
 
-.headeremail {
-	@include leaguegothic;
-}
-
+/* resume button at bottom of page */
 .resume_button {
 	border: 1px solid $color_one;
 	text-align: center;
-	@include leaguegothic;
+	font-family: $leagueset;
 	font-size: 42px;
 	float: right;
 	background-color: $light_color;
@@ -251,8 +236,5 @@ article:nth-child(even) {
 	}
 }
 
+/* media queries are currently in another file, they need to be moved inline to be more manageable */
 @import "mediaqueries.css.scss";
-
-.flexslider {
-	@include animate;
-}

@@ -1,0 +1,17 @@
+/*
+	Dozen
+	12 Corp
+	2011
+	Apache License
+	Lets not talk version numbers yet
+	This is not a public release really, just an easter egg for those of you interested in looking through my code.
+	
+	This particular file sucks a lot right now. Its really just a placeholder for things to come. Oh, and one mixin.
+*/
+
+/* basic animation */
+@mixin animate {
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+}

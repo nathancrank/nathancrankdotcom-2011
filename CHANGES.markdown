@@ -1,12 +1,17 @@
 nathancrankdotcom  
 late 2011
-build A01007
+build A01008
 
 commit notes
 ============
 
 changes
 -------  
+  
+####A01008
+- cleaned and commented some code
+- updated readme file
+- began spilting out dozen framework  
 
 ####A01007
 - added google analytics support 
@@ -36,22 +41,36 @@ changes
 - added signup form (just a coming soon page currently)
 - fixed route (/) routing to use proper rails syntax
   
+Build Numbering
+===============  
+This numbering system is moronic. I'll choose something more logical soon.
+Build numbers follow this form:
+  
+A01005  
+  
+Where:  
+A - is the version number
+	the version number is a letter, a=1, b=2, c=3, you get the point  
+  
+01 - is the point version
+	01 = .1, 02 = .2, 35 = .35  
+  
+005 - is the build/commit number  
+  
+
 known issues
 ------------   
 ###focus areas
-- rails testing (rspec)
+- cleaning and commenting code
+- cleaning up media queries
  
 ###high priority  
 - pages are basically static!
 - firefox css adjustments
 - IE css adjustments
-- adding analytics
+- rails testing (rspec)
 
 ###low priority
 - nav tags need ul and li items added for proper semantics in application.html.erb
-- media queries are completely incomplete, currently only changes .container width, probably does not work in all browsers equally, certainly not tested.
-- media queries sort of work on android, but not perfectly.
-- basically overhaul media querie code
-- and while we're on it, comment and organize the css better
 - Only tested in Safari with any completeness
 - logo only works in safari perfectly

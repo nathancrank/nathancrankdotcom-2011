@@ -1,0 +1,18 @@
+/*
+	Dozen
+	12 Corp
+	2011
+	Apache License
+	Lets not talk version numbers yet
+	This is not a public release really, just an easter egg for those of you interested in looking through my code.
+*/
+
+/* import */
+@import "animation.css.scss";
+
+/* rounded corners */
+@mixin rounded($radius: 5px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
