@@ -1,12 +1,18 @@
 nathancrankdotcom  
 late 2011
-build A01008
+build A01009
 
 commit notes
 ============
 
 changes
 -------  
+  
+####A01009
+- cleaned up media queries
+- changed the way media queries are handled
+- added semantic grid
+- commented more code  
   
 ####A01008
 - cleaned and commented some code
@@ -62,7 +68,6 @@ known issues
 ------------   
 ###focus areas
 - cleaning and commenting code
-- cleaning up media queries
  
 ###high priority  
 - pages are basically static!
