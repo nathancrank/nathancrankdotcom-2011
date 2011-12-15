@@ -2,8 +2,8 @@
 
 /* set variables */
 /* main two colors for background */
-$dark_color: #1c242a;
-$light_color: #fff;
+$dark_color: #1C242A;
+$light_color: #f1f1f1;
 /* logo colors */
 $color_one: #acc0c7;
 $color_two: #404f6d;
@@ -29,11 +29,22 @@ $leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
     font-weight: normal;
     font-style: normal;
 }
+/* set default font */
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-weight: light;
+}
+/* set some paragraph styles */
+p {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
 
 /* container properties */
 .container {
 	margin: 0 auto;
-	max-width: 1300px;
+	max-width: 1200px;
 	padding: 0 50px;
 
 }
@@ -44,45 +55,38 @@ $leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
 	margin-top: 50px;
 	text-align: right;
 	font-weight: bolder;
-	h1 {
-		font-size: 339px;
+	font-size: 339px;
+	color: #ddd;
+	a {
 		color: #ddd;
-		a {
-			color: #ddd;
-			text-decoration: none;
-		}
-		a:visited {
-			color: #ddd;
-		}
-		a:hover {
-			color: #ddd;
-		}
+		text-decoration: none;
+	}
+	a:visited {
+		color: #ddd;
+	}
+	a:hover {
+		color: #ddd;
 	}
 }
 
-/* banner h1 mixin */
-@mixin headerh1 {
+/* header and footer logo mixin */
+@mixin logo($bg_color, $lk_color) {
 	font-family: $leagueset;
-	text-transform: uppercase;
-	line-height: 80%;
-}
-
-/* header and footer banner mixin */
-@mixin banner($bg_color, $lk_color) {
 	background-color: $bg_color;
 	text-align: right;
 	height: 450px;
-	
-	h1:first-child {
+	.logo_top {
 		color: $color_one;
-		@include headerh1;
 		font-size: 177px;
 		padding-top: 50px;
+		text-transform: uppercase;
+		line-height: 80%;
 	}
-	h1:nth-child(2) {
+	.logo_bottom {
 		color: $color_two;
-		@include headerh1;
 		font-size: 214px;
+		text-transform: uppercase;
+		line-height: 80%;
 	}
 	nav {
 		margin-top: -195px;	
@@ -95,7 +99,6 @@ $leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
 	a {
 		color: $lk_color;
 		text-decoration: none;
-		font-family: $leagueset;
 		text-transform: capitalize;
 	}
 	a:first-child {
@@ -103,7 +106,7 @@ $leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
 		padding-right: 25px;
 	}
 	a:nth-child(2) {
-		padding: 0 28px;
+		padding: 0 33px;
 	}
 	a:last-child {
 		padding-left: 28px;
@@ -119,16 +122,14 @@ $leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
 
 /* actual header code */
 header {
-	@include banner($dark_color, $light_color);
-	h1:first-child {
+	@include column(12);
+	@include logo($dark_color, $light_color);
+	.logo_top {
 		color: $color_one;
-		@include headerh1;
 		font-size: 177px;
-		padding-top: 50px;
 	}
-	h1:nth-child(2) {
+	.logo_bottom {
 		color: $color_two;
-		@include headerh1;
 		font-size: 214px;
 	}
 	nav {
@@ -139,16 +140,14 @@ header {
 
 /* actual footer code */
 footer {
-	@include banner($light_color, $dark_color);
-	h1:first-child {
+	@include column(12);
+	@include logo($light_color, $dark_color);
+ 	.logo_top {
 		color: $color_one;
-		@include headerh1;
 		font-size: 177px;
-		padding-top: 50px;
 	}
-	h1:nth-child(2) {
+	.logo_bottom {
 		color: $color_two;
-		@include headerh1;
 		font-size: 214px;
 	}
 	nav {
@@ -163,7 +162,6 @@ footer {
 	padding: 50px 0 50px 0;
 	background-color: $abg_color;
 	overflow: auto;
-	
 	p {
 		padding-bottom: 0.5em;
 		text-indent: 1.5em;
@@ -183,22 +181,18 @@ footer {
 		font-family: $leagueset;
 		color: $af_color;
 		font-size: 4.5em;
-	}
-	/* iPads (portrait and landscape) ----------- */
-	@media only screen 
-	and (min-device-width : 768px) 
-	and (max-device-width : 1024px) {
-	/* Styles */
-		.article_header h2 {
-			font-size: 1.5em;
+		/* iPads (portrait and landscape) ----------- */
+		@media only screen 
+		and (min-device-width : 768px) 
+		and (max-device-width : 1024px) {
+			/* Styles */ 
+				font-size: 6.8em;
 		}
-	}
-	/* smartphones */
-	@media only screen 
-	and (min-device-width : 320px)
-	and (max-device-width : 480px) {
-		.article_header h2 {
-			font-size: 1.5em;
+		/* smartphones */
+		@media only screen 
+		and (min-device-width : 320px)
+		and (max-device-width : 480px) {
+				font-size: 6.8em;
 		}
 	}
 	.article_url {
@@ -239,6 +233,9 @@ footer {
 }
 
 /* actual article code, odd and even children alternate colors */
+article {
+	@include column(12);
+}
 article:nth-child(odd) {
 	@include article($light_color, $dark_color);
 }

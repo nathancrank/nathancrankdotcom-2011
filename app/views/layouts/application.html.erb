@@ -8,10 +8,6 @@
 	<%= stylesheet_link_tag 'flexslider', :media => 'screen' %>
 	<%= stylesheet_link_tag 'nathancrankdotcom', :media => 'screen' %>
 	<%= stylesheet_link_tag 'print', :media => 'print' %>
-	<!--[if lt IE 8]><%= stylesheet_link_tag 'ie' %><![endif]-->
-	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 	<%= javascript_include_tag :jquery %>
 	<%= javascript_include_tag :flexslider %>
 	<%= javascript_include_tag :gallery %>
@@ -26,14 +22,11 @@
 	
     <%= yield %>
 
-
 	<footer>
 		<div class=container>
 			<%= render 'layouts/logo' %>
 		</div>
 	</footer>
-	
-	
 	
   </body>
 </html>
