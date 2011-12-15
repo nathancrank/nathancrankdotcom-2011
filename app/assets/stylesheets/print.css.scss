@@ -1,5 +1,4 @@
 /* only tested on resume page right now */
-
 @import "nathancrankdotcom.css.scss";
 
 .container {
@@ -16,11 +15,11 @@
 	.nav_span {
 		display: none;
 	}
-	h1:first-child {
+	.logo_top {
 		font-size: 24px;
 		display: inline-block;
 	}
-	h1:nth-child(2) {
+	.logo_bottom {
 		font-size: 24px;
 		display: inline-block;
 	}
@@ -89,4 +88,5 @@ footer {
 
 footer {
 	display: none;
+
 }

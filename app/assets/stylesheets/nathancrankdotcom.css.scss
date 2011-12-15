@@ -3,7 +3,7 @@
 /* set variables */
 /* main two colors for background */
 $dark_color: #1C242A;
-$light_color: #f1f1f1;
+$light_color: #fcfcfc;
 /* logo colors */
 $color_one: #acc0c7;
 $color_two: #404f6d;
@@ -11,11 +11,13 @@ $color_two: #404f6d;
 $leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
 
 /* reset */
-@import "reset.css.scss";
+@import "normalizemin.css.scss";
 /* dozen framework */
 @import "dozen/dozen.css.scss";
 /* semantic grid */
 @import "grid.css.scss";
+/* flexslider */
+@import "flexslidermin.css.scss";
 
 /* import fonts */
 /* league gothic */
