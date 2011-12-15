@@ -10,12 +10,11 @@
 	<meta charset=utf-8>
     <title><%= title %></title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="description" content="The Website of Nathan Crank">
-	<meta name="author" content="Nathan Crank">
     <%= csrf_meta_tag %>
 	<%= stylesheet_link_tag 'flexslider', :media => 'screen' %>
 	<%= stylesheet_link_tag 'nathancrankdotcom', :media => 'screen' %>
 	<%= stylesheet_link_tag 'print', :media => 'print' %>
+	<script src="modernizr-2.0.6.min.js"></script>
   </head>
   <body>
 	<header>
@@ -35,8 +34,8 @@
 	
 	<!-- JavaScript at the bottom for fast page loading -->
 	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-	52.  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-	53.  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/jquery-1.6.2.min.js">\x3C/script>')</script>
 	
 	<!-- flexslider and loader -->
 	<%= javascript_include_tag :flexslider %>
