@@ -21,11 +21,11 @@ $leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
 /* league gothic */
 @font-face {
     font-family: 'LeagueGothicRegular';
-    src: url('leaguegothic/league_gothic-webfont.eot');
-    src: url('leaguegothic/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('leaguegothic/league_gothic-webfont.woff') format('woff'),
-         url('leaguegothic/league_gothic-webfont.ttf') format('truetype'),
-         url('leaguegothic/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    src: url('http://nathancrank.com/assets/leaguegothic/league_gothic-webfont.eot');
+    src: url('http://nathancrank.com/assets/leaguegothic/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://nathancrank.com/assets/leaguegothic/league_gothic-webfont.woff') format('woff'),
+         url('http://nathancrank.com/assets/leaguegothic/league_gothic-webfont.ttf') format('truetype'),
+         url('http://nathancrank.com/assets/leaguegothic/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -222,23 +222,19 @@ footer {
 		line-height: 170%;
 		font-size: 1em;
 		text-align: justify;
-	}
-	/* smartphones */
-	@media only screen 
-	and (min-device-width : 320px)
-	and (max-device-width : 480px) {
-		.article_body {
-			font-size: 1.8em;
-		}
-	}
-	/* iPads (portrait) */
-	@media only screen 
-	and (min-device-width : 768px) 
-	and (max-device-width : 1024px) 
-	and (orientation : portrait) {
-		.article_body {
-			font-size: 1.3em;
-		}
+		/* smartphones */
+		@media only screen 
+		and (min-device-width : 320px)
+		and (max-device-width : 480px) {
+				font-size: 2.2em;
+			}
+		/* iPads (portrait) */
+		@media only screen 
+		and (min-device-width : 768px) 
+		and (max-device-width : 1024px) 
+		and (orientation : portrait) {
+				font-size: 1.3em;
+			}
 	}
 }
 
