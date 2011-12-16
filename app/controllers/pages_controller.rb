@@ -23,5 +23,5 @@ class PagesController < ApplicationController
   def coverletter
     @title = "coverletter"
   end
-
+  
 end
