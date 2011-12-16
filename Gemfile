@@ -7,6 +7,7 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 
+
 group :production do
   gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
   gem 'pg'
@@ -19,6 +20,7 @@ group :assets do
   gem 'coffee-rails'
   gem 'uglifier'
   gem 'haml'
+  gem 'yui-compressor'
 end
 
 gem 'jquery-rails'
