@@ -20,7 +20,6 @@ group :assets do
   gem 'coffee-rails'
   gem 'uglifier'
   gem 'haml'
-  gem 'jammit'
 end
 
 gem 'jquery-rails'
