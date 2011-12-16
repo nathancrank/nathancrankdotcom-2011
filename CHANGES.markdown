@@ -7,6 +7,11 @@ commit notes
 
 changes
 -------  
+
+####A01010
+- lots of little changes
+- scratch that, massive cleanup of the code since the last changes were recorded in this file
+- HTML5 boilerplate basically was used to overhaul a ton of stuff
   
 ####A01009
 - cleaned up media queries
@@ -71,11 +76,8 @@ known issues
  
 ###high priority  
 - pages are basically static!
-- firefox css adjustments
-- IE css adjustments
-- rails testing (rspec)
 
 ###low priority
 - nav tags need ul and li items added for proper semantics in application.html.erb
-- Only tested in Safari with any completeness
+- Only tested in Safari (on all devices however) with any completeness
 - logo only works in safari perfectly
