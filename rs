@@ -1,0 +1,2 @@
+nohup rails s
+zsh
