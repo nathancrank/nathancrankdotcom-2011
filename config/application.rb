@@ -47,7 +47,6 @@ module Nathancrankdotcom
 
     # Enable the asset pipeline
     config.assets.enabled = true
-    config.assets.js_compressor = :yui
     
 
     # Version of your assets, change this if you want to expire all your assets
