@@ -11,13 +11,13 @@ $color_two: #404f6d;
 $leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
 
 /* reset */
-@import "normalizemin.css.scss";
+@import "normalize.css.scss";
 /* dozen framework */
 @import "dozen/dozen.css.scss";
 /* semantic grid */
 @import "grid.css.scss";
 /* flexslider */
-@import "flexslidermin.css.scss";
+@import "flexslider.css.scss";
 
 /* import fonts */
 /* league gothic */
