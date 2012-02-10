@@ -118,7 +118,7 @@ p {
 	a:visited {
 		color: $lk_color;
 	}
-	a: hover {
+	a:hover {
 		color: $lk_color;
 	}
 }
@@ -302,12 +302,20 @@ article:nth-child(even) {
 	}
 	#skills {
 		color: $color_two;
+		margin-top: .75em;
 	}
-	hr {
+	#github {
+		color: $color_two;
+		margin-top: .75em;
+	}
+	a {
 		color: $dark_color;
-		background-color: $dark_color;
-		height: 1px;
-		border: 0px;
+	}
+	a:visited {
+		color: $dark_color;
+	}
+	a:hover {
+		color: $dark_color;
 	}
 	
 }
