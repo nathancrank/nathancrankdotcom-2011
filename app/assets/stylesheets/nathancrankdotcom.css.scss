@@ -303,6 +303,12 @@ article:nth-child(even) {
 	#skills {
 		color: $color_two;
 	}
+	hr {
+		color: $dark_color;
+		background-color: $dark_color;
+		height: 1px;
+		border: 0px;
+	}
 	
 }
 
