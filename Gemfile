@@ -5,9 +5,11 @@ gem 'rails', '3.1.0'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
+
+# dev database
 gem 'sqlite3'
 
-
+#production (heroku) database
 group :production do
   gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
   gem 'pg'
@@ -20,10 +22,10 @@ group :assets do
   gem 'coffee-rails'
   gem 'uglifier'
   gem 'haml'
-  gem 'yui-compressor'
 end
 
 gem 'jquery-rails'
+gem 'yui-compressor'
 
 group :development do
   gem 'rspec-rails'
