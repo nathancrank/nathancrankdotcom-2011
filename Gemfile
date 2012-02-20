@@ -15,7 +15,6 @@ group :assets do
   gem 'coffee-rails'
   gem 'uglifier'
   gem 'haml'
-  gem 'yui-compressor'
   gem 'jquery-rails'
 end
 
