@@ -393,7 +393,7 @@
     slideshow: true,                //Should the slider animate automatically by default? (true/false)
     slideshowSpeed: 5000,           //Set the speed of the slideshow cycling, in milliseconds
     animationDuration: 500,         //Set the speed of animations, in milliseconds
-    directionNav: false,             //Create navigation for previous/next navigation? (true/false)
+    directionNav: true,             //Create navigation for previous/next navigation? (true/false)
     controlNav: true,               //Create navigation for paging control of each clide? (true/false)
     keyboardNav: true,              //Allow for keyboard navigation using left/right keys (true/false)
     touchSwipe: true,               //Touch swipe gestures for left/right slide navigation (true/false)
