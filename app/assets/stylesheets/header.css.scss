@@ -17,6 +17,9 @@ header {
 	}
 	
 	nav {
-		
+		display: none;
+	}
+	:hover nav {
+		display: block;
 	}
 }
