@@ -1,13 +1,12 @@
 Nathancrankdotcom::Application.routes.draw do
   
-  match 'admin/s3cr3t/signup', :to => 'users#signup'
-  match 'admin/s3cr3t/signin', :to => 'users#signin'
+  # match 'admin/s3cr3t/signup', :to => 'users#signup'
+  # match 'admin/s3cr3t/signin', :to => 'users#signin'
 
   root :to => 'pages#portfolio'
   
   match '/portfolio', :to => 'pages#portfolio'
   match '/blog', :to => 'pages#blog'
-  match '/contact', :to => 'pages#contact'
   match '/resume', :to => 'pages#resume'
   match '/coverletter', :to => 'pages#coverletter'
   
