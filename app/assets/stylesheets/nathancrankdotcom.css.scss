@@ -1,9 +1,7 @@
-/* this is all still very messy */
-
 /* set variables */
 /* main two colors for background */
 $dark_color: #1C242A;
-$light_color: #fcfcfc;
+$light_color: #ffffff;
 /* logo colors */
 $color_one: #acc0c7;
 $color_two: #404f6d;
@@ -11,23 +9,17 @@ $color_two: #404f6d;
 $leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
 
 
-
 /* load in frameworks */
-/* normalize */
 @import "normalize.css.scss";
-/* dozen framework */
 @import "dozen/dozen.css.scss";
-/* semantic grid */
 @import "grid.css.scss";
-/* flexslider */
 @import "flexslider.css.scss";
-/* fonts */
 @import "fonts.css.scss";
 
 
-
-/* load indiviual page styles */
+/* load page element styles */
 @import "resume.css.scss";
+@import "header.css.scss";
 
 
 
@@ -35,6 +27,9 @@ $leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial;
 	font-weight: light;
+	background: lighten($dark_color, 20%);
+	/* background: url(defaultbackground.jpg);
+	background-position:center; */
 }
 /* add hyphens */
 p {
@@ -46,7 +41,7 @@ p {
 /* container properties */
 .container {
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1260px;
 	padding: 0 50px;
 
 }
@@ -119,23 +114,6 @@ p {
 	}
 	a:hover {
 		color: $lk_color;
-	}
-}
-
-/* actual header code */
-header {
-	@include column(12);
-	@include logo($dark_color, $light_color);
-	.logo_top {
-		color: $color_one;
-		font-size: 177px;
-	}
-	.logo_bottom {
-		color: $color_two;
-		font-size: 214px;
-	}
-	nav {
-		margin-top: -195px;
 	}
 }
 
@@ -235,12 +213,10 @@ footer {
 /* actual article code, odd and even children alternate colors */
 article {
 	@include column(12);
-}
-article:nth-child(odd) {
-	@include article($light_color, $dark_color);
-}
-article:nth-child(even) {
 	@include article($dark_color, $light_color);
+}
+article:first-child {
+	margin-top: 50px;
 }
 .article_body {
 	@include column(7);

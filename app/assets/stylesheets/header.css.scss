@@ -1,0 +1,22 @@
+header {
+	@include column(12);
+	padding: 20px 0;
+	
+	background: $light_color;
+	border-bottom: 5px solid darken($dark_color, 90%) ;
+	-webkit-box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.95);
+	-moz-box-shadow:    0px 10px 15px rgba(50, 50, 50, 0.95);
+	box-shadow:         0px 10px 15px rgba(50, 50, 50, 0.95);
+	
+	font-family: $leagueset;
+	text-align: center;
+	
+	.logo_type {
+		font-size: 5em;
+		color: $dark_color;
+	}
+	
+	nav {
+		
+	}
+}
