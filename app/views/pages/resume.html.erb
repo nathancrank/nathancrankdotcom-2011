@@ -1,13 +1,14 @@
 <article>
 	<div class='container resume'>
-		<h5 id="email">me@nathancrank.com</h2>
+		<h5 id='email'>me@nathancrank.com</h2>
 		<h2>Employment History</h2>
 	
-	<div class="column_one">
+	<div class='column_one'>
 		<h3>Design &amp; Web</h3>
 		
 		<h3>Web Site Consultant</h3>
 		<h4>The 1717 Design Group, Richmond, Virginia</h4>
+		<h5><a href='http://1717design.com'>View 1717 Design's Web Site</a></h5>
 		<h5>May 2011 to June 2011</h5>
 		<ul>
 			<li>Developed css3 and html5 templates for production artists  
@@ -32,12 +33,19 @@
 			<li>Coded html and css solutions that were compatible with the schools content management system
 		</ul>
 		
-		<h3 id="github">GitHub</h3>
-			<a href="http://github.com/nathancrank/">Visit my GitHub to see code I have written</a>
-		
+		<h3 id='skills'>Skills</h3>
+		<ul>
+			<li>html5
+			<li>css3
+			<li>javascript | jquery
+			<li>ruby on rails
+			<li>php | mysql
+			<li>photoshop
+			<li>mac | linux | unix
+		</ul>
 	</div>
 	
-	<div class="column_two">
+	<div class='column_two'>
 		<h3>Apple</h3>
 		
 		<h3>Genius</h3>
@@ -49,14 +57,9 @@
 			<li>Trained employees on Apple’s internal systems and processes for troubleshooting and repair  
 			<li>Assisted with new Genius training and Genius Room setup at Apple Store Georgetown’s Grand Opening  
 			<li>Implemented Genius Room systems such as Open Directory server  
-			<li>Developed web application to handle post-sale data transfer and installation services  
-			<ul>
-			    <li>Developed app using CSS, HTML and FileMaker
-			    <li>Worked within Apple's usability and style guides and legal requirements
-			    <li>Developed bug tracker for project to gather feedback directly from employees using the app
-			    <li>Wrote support and training materials
-			    <li>Trained store employees on app and new procedures
-			</ul> 
+			<li>Developed and implemented Service Board, a web app that managed services such as ram installs and data transfers in the store
+			<li>Created bug tracker and training and support materials for Service Board
+			<li>Developed Service Board with CSS, HTML and FileMaker Pro
 		</ul>
 		
 		<h3>Specialist</h3>
@@ -74,26 +77,26 @@
 			<li>Shadowed and assisted Mac Consultant, with both on-site and in-house Mac and network services  
 		</ul>
 		
-			
-		<h3 id="skills">Skills</h3>
-		<ul>
-			<li>html5
-			<li>css3
-			<li>javascript | jquery
-			<li>ruby on rails
-			<li>php | mysql
-			<li>photoshop
-			<li>mac | linux | unix
-		</ul>
+		<h3 id='github'>GitHub</h3>
+			<a href='http://github.com/nathancrank/'>Visit GitHub to see code I have written</a>
+		
 	</div>
 	
 	</div>
 </article>
 
-<article class=print_hide>
+<article class='print_hide'>
+	<div class=container>
+		<h1>Download</h1>
+	</div>
 	<div class=container>
 		<%= link_to("/assets/nathancrank.resume.pdf") do %>
-		<div class=resume_button>Download PDF</resume>
+		<div class=connect_button>PDF</resume>
+		<% end %>
+	</div>
+	<div class=container>
+		<%= link_to("/assets/nathancrank.resume.doc") do %>
+		<div class=connect_button>Doc</resume>
 		<% end %>
 	</div>
 </article>

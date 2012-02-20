@@ -10,7 +10,10 @@ $color_two: #404f6d;
 /* font sets */
 $leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
 
-/* reset */
+
+
+/* load in frameworks */
+/* normalize */
 @import "normalize.css.scss";
 /* dozen framework */
 @import "dozen/dozen.css.scss";
@@ -18,19 +21,15 @@ $leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
 @import "grid.css.scss";
 /* flexslider */
 @import "flexslider.css.scss";
+/* fonts */
+@import "fonts.css.scss";
 
-/* import fonts */
-/* league gothic */
-@font-face {
-    font-family: 'LeagueGothicRegular';
-    src: url('leaguegothic/league_gothic-webfont.eot');
-    src: url('leaguegothic/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('leaguegothic/league_gothic-webfont.woff') format('woff'),
-         url('leaguegothic/league_gothic-webfont.ttf') format('truetype'),
-         url('leaguegothic/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
+
+/* load indiviual page styles */
+@import "resume.css.scss";
+
+
 
 /* set default font */
 body {
@@ -259,67 +258,6 @@ article:nth-child(even) {
 	@include column(5);
 }
 
-/* resume styling */
-.resume {
-	
-	#email {
-		float: right;
-		color: $dark_color;
-		display: none;
-	}
-	
-	
-	h2 {
-		text-align: center;
-		font: 62px $leagueset;
-		clear: both;
-		color: $color_two;
-		
-		a {
-			color: $color-two;
-			text-decoration: none;
-		}
-	}
-	h3 {
-		font: 42px $leagueset;
-		padding-top: 20px;		
-	}
-	h4 {
-		font: 32px $leagueset;
-		color: $color_two;
-	}
-	h5 {
-		font: 24px $leagueset;
-		color: $color_two;
-	}
-	ul {
-		list-style-type: square;
-		list-style-position: inside;
-		padding: 10px 0;
-	}
-	li {
-		line-height: 1.5em;
-	}
-	#skills {
-		color: $color_two;
-		margin-top: .75em;
-	}
-	#github {
-		color: $color_two;
-		margin-top: .75em;
-	}
-	a {
-		color: $dark_color;
-	}
-	a:visited {
-		color: $dark_color;
-	}
-	a:hover {
-		color: $dark_color;
-	}
-	
-}
-
 /* connect buttons at bottom of page */
 .connect_button {
 	border: 1px solid $color_one;
@@ -336,31 +274,4 @@ article:nth-child(even) {
 		color: $dark_color;
 	}
 	width: 149px;
-}
-
-.resume_button {
-	border: 1px solid $color_one;
-	text-align: center;
-	font-family: $leagueset;
-	font-size: 42px;
-	float: right;
-	background-color: $light_color;
-	padding: 10px 50px;
-	
-	a {
-		text-decoration: none;
-		color: $dark_color;
-	}
-	width: 288px;
-}
-
-/* resume page */
-.resume {
-	.column_one {
-		@include column(5);
-	}
-	.column_two {
-		@include column(5);
-		float: right;
-	}
 }

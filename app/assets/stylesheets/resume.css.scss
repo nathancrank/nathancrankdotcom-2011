@@ -1,0 +1,77 @@
+.resume {
+	
+	#email {
+		float: right;
+		color: $dark_color;
+		display: none;
+	}
+	
+	
+	h2 {
+		text-align: center;
+		font: 62px $leagueset;
+		clear: both;
+		color: $color_two;
+		
+		a {
+			color: $color-two;
+			text-decoration: none;
+		}
+	}
+	h3 {
+		font: 42px $leagueset;
+		padding-top: 20px;		
+	}
+	h4 {
+		font: 32px $leagueset;
+		color: $color_two;
+	}
+	h5 {
+		font: 24px $leagueset;
+		color: $color_two;
+		a {
+			
+		}
+	}
+	ul {
+		list-style-type: square;
+		list-style-position: inside;
+		padding: 10px 0;
+	}
+	li {
+		line-height: 1.5em;
+	}
+	#skills {
+		color: $color_two;
+		margin-top: .75em;
+	}
+	#github {
+		color: $color_two;
+		margin-top: .75em;
+	}
+	a {
+		color: $dark_color;
+	}
+	a:visited {
+		color: $dark_color;
+	}
+	a:hover {
+		color: $dark_color;
+	}
+	
+}
+
+.resume {
+	.column_one {
+		@include column(5);
+	}
+	.column_two {
+		@include column(5);
+		float: right;
+	}
+}
+
+.resume_footer h1 {
+	font: 62px $leagueset;
+	color: $light_color;
+}
