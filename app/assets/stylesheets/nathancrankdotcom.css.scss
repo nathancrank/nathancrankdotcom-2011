@@ -36,7 +36,7 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial;
 	font-weight: light;
 }
-/* set some paragraph styles */
+/* add hyphens */
 p {
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
@@ -57,7 +57,7 @@ p {
 	margin-top: 50px;
 	text-align: right;
 	font-weight: bolder;
-	font-size: 228px;
+	font-size: 128px;
 	color: #ddd;
 	a {
 		color: #ddd;
@@ -268,10 +268,16 @@ article:nth-child(even) {
 	background-color: $light_color;
 	padding: 10px 10px;
 	margin: 0 0 0 50px;
-	
+	width: 149px;
+}
+.connect_footer {
+	h1 {
+		font: 62px $leagueset;
+		color: $light_color;
+		display: inline-block;
+	}
 	a {
 		text-decoration: none;
 		color: $dark_color;
 	}
-	width: 149px;
 }
