@@ -1,0 +1,14 @@
+/* line 35, ../../app/assets/stylesheets/grid.css.scss */
+body {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 22, ../../app/assets/stylesheets/grid.css.scss */
+body:before, body:after {
+  content: "";
+  display: table;
+}
+/* line 26, ../../app/assets/stylesheets/grid.css.scss */
+body:after {
+  clear: both;
+}

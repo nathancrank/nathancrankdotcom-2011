@@ -16,6 +16,7 @@ group :assets do
   gem 'uglifier'
   gem 'haml'
   gem 'jquery-rails'
+  gem 'compass'
 end
 
 group :development do

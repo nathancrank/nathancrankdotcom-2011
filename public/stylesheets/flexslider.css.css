@@ -1,0 +1,201 @@
+/*
+ * jQuery FlexSlider v1.7
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* Browser Resets */
+/* line 12, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-container a:active,
+.flexslider a:active {
+  outline: none;
+}
+
+/* line 15, ../../app/assets/stylesheets/flexslider.css.scss */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+/* line 19, ../../app/assets/stylesheets/flexslider.css.scss */
+.flexslider {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+/* line 20, ../../app/assets/stylesheets/flexslider.css.scss */
+.flexslider .slides > li {
+  display: none;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 21, ../../app/assets/stylesheets/flexslider.css.scss */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+/* line 22, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+/* line 25, ../../app/assets/stylesheets/flexslider.css.scss */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 26, ../../app/assets/stylesheets/flexslider.css.scss */
+html[xmlns] .slides {
+  display: block;
+}
+
+/* line 27, ../../app/assets/stylesheets/flexslider.css.scss */
+* html .slides {
+  height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+/* line 32, ../../app/assets/stylesheets/flexslider.css.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider Default Theme
+*********************************/
+/* line 37, ../../app/assets/stylesheets/flexslider.css.scss */
+.flexslider {
+  position: relative;
+  zoom: 1;
+}
+
+/* line 38, ../../app/assets/stylesheets/flexslider.css.scss */
+.flexslider .slides {
+  zoom: 1;
+}
+
+/* line 39, ../../app/assets/stylesheets/flexslider.css.scss */
+.flexslider .slides > li {
+  position: relative;
+}
+
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+/* line 41, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-container {
+  zoom: 1;
+  position: relative;
+}
+
+/* Caption style */
+/* IE rgba() hack */
+/* line 45, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-caption {
+  background: none;
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+  zoom: 1;
+}
+
+/* line 47, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-caption {
+  width: 96%;
+  padding: 2%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* Direction Nav */
+/* line 50, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav li a {
+  width: 45%;
+  height: 100%;
+  margin: -13px 0 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+/* line 51, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav li a.next {
+  background-position: -52px 0;
+  right: 0px;
+}
+
+/* line 52, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav li a.prev {
+  background-position: 0 0;
+  left: 0px;
+}
+
+/* line 53, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-direction-nav li a.disabled {
+  opacity: .3;
+  filter: alpha(opacity=30);
+  cursor: default;
+}
+
+/* Control Nav */
+/* line 56, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-control-nav {
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* line 57, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-control-nav li {
+  margin: 0 0 0 5px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 58, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-control-nav li:first-child {
+  margin: 0;
+}
+
+/* line 59, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-control-nav li a {
+  width: 13px;
+  height: 13px;
+  display: block;
+  background: url(theme/bg_control_nav.png) no-repeat 0 0;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+/* line 60, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-control-nav li a:hover {
+  background-position: 0 -13px;
+}
+
+/* line 61, ../../app/assets/stylesheets/flexslider.css.scss */
+.flex-control-nav li a.active {
+  background-position: 0 -26px;
+  cursor: default;
+}
