@@ -12,6 +12,7 @@ $leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
 /* load in frameworks */
 @import "normalize.css.scss";
 @import "dozen/dozen.css.scss";
+@import "dozen/animation.css.scss";
 @import "grid.css.scss";
 @import "flexslider.css.scss";
 @import "fonts.css.scss";
@@ -31,6 +32,7 @@ body {
 	background: lighten($dark_color, 20%);
 	/* background: url(defaultbackground.jpg);
 	background-position:center; */
+	padding-top: 70px;
 }
 /* add hyphens */
 p {

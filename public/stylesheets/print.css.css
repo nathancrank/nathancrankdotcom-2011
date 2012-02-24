@@ -553,6 +553,17 @@ table {
 */
 /* basic animation */
 /* rounded corners */
+/*
+	Dozen
+	12 Corp
+	2011
+	Apache License
+	Lets not talk version numbers yet
+	This is not a public release really, just an easter egg for those of you interested in looking through my code.
+	
+	This particular file sucks a lot right now. Its really just a placeholder for things to come. Oh, and one mixin.
+*/
+/* basic animation */
 /* line 35, ../../app/assets/stylesheets/grid.css.scss */
 body {
   width: 100%;
@@ -864,88 +875,70 @@ html[xmlns] .slides {
 
 /* line 1, ../../app/assets/stylesheets/header.css.scss */
 header {
+  position: fixed;
+  top: 0px;
   z-index: 50;
   display: inline;
   float: left;
   width: 100%;
   margin: 0 0%;
-  padding: 20px 0;
+  padding: 5px 0;
+  overflow: hidden;
+  height: 3.3em;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   background: white;
   border-bottom: 5px solid black;
   -webkit-box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.95);
   -moz-box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.95);
   box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.95);
-  font-family: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
   text-align: center;
 }
-/* line 15, ../../app/assets/stylesheets/header.css.scss */
+/* line 11, ../../app/assets/stylesheets/header.css.scss */
+header:hover {
+  height: 6em;
+}
+/* line 23, ../../app/assets/stylesheets/header.css.scss */
 header .logo_type {
-  font-size: 5em;
+  font-family: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
+  font-size: 3em;
   color: #1c242a;
 }
-/* line 20, ../../app/assets/stylesheets/header.css.scss */
-header nav {
-  z-index: 60;
-  display: none;
-  position: absolute;
-  top: 110px;
-  left: 50%;
-  margin-left: -150px;
-  width: 300px;
-  background: #eceff2;
-  border-radius: 8px;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border: 5px solid black;
-  -webkit-box-shadow: 0px 10px 20px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0px 10px 20px rgba(50, 50, 50, 0.75);
-  box-shadow: 0px 10px 20px rgba(50, 50, 50, 0.75);
-}
-/* line 35, ../../app/assets/stylesheets/header.css.scss */
-header nav .nav_hr {
-  border-top: 2px solid #afbec9;
-  width: 100%;
-  height: 1px;
-  margin: 10px 0;
-}
-/* line 42, ../../app/assets/stylesheets/header.css.scss */
+/* line 31, ../../app/assets/stylesheets/header.css.scss */
 header nav ul {
-  padding: 10px 0;
+  padding: 5px 0;
 }
-/* line 47, ../../app/assets/stylesheets/header.css.scss */
-header nav ul li:first-child {
-  font-size: 2.4em;
-}
-/* line 50, ../../app/assets/stylesheets/header.css.scss */
-header nav ul li:nth-child(2) {
-  font-size: 2.4em;
-}
-/* line 53, ../../app/assets/stylesheets/header.css.scss */
-header nav ul li:nth-child(n+2) {
+/* line 34, ../../app/assets/stylesheets/header.css.scss */
+header nav ul li {
   display: inline;
-  padding: 0 10px;
+  padding: 4px 12px 6px 16px;
+  font-size: 1em;
+  font-weight: 500;
 }
-/* line 60, ../../app/assets/stylesheets/header.css.scss */
-header:hover nav {
-  display: block;
+/* line 41, ../../app/assets/stylesheets/header.css.scss */
+header nav ul li a {
+  text-decoration: none;
+  color: #718ca1;
 }
-/* line 63, ../../app/assets/stylesheets/header.css.scss */
-header nav:hover {
-  display: block;
+/* line 46, ../../app/assets/stylesheets/header.css.scss */
+header nav ul li:hover a {
+  color: #1c242a;
 }
 
 /* set default font */
-/* line 28, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 29, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial;
   font-weight: light;
   background: #455867;
   /* background: url(defaultbackground.jpg);
   background-position:center; */
+  padding-top: 70px;
 }
 
 /* add hyphens */
-/* line 36, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 38, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 p {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -953,7 +946,7 @@ p {
 }
 
 /* container properties */
-/* line 43, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 45, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 .container {
   margin: 0 auto;
   max-width: 1260px;
@@ -962,7 +955,7 @@ p {
 
 /* article mixin */
 /* actual article code, odd and even children alternate colors */
-/* line 127, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 129, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 article {
   display: inline;
   float: left;
@@ -973,23 +966,23 @@ article {
   background-color: white;
   overflow: auto;
 }
-/* line 56, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 58, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 article p {
   padding-bottom: 0.5em;
   text-indent: 1.5em;
 }
-/* line 60, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 62, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 article p a {
   text-decoration: none;
   color: #404f6d;
   text-weight: bolder;
 }
-/* line 66, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 68, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 article p:first-child {
   padding-top: 0;
   text-indent: 0em;
 }
-/* line 71, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 73, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 article .article_header {
   font-family: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
   color: #1c242a;
@@ -1000,7 +993,7 @@ article .article_header {
 @media only screen 
 		and (min-device-width : 768px) 
 		and (max-device-width : 1024px) {
-  /* line 71, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+  /* line 73, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
   article .article_header {
     /* Styles */
     font-size: 6.8em;
@@ -1009,12 +1002,12 @@ article .article_header {
 @media only screen 
 		and (min-device-width : 320px)
 		and (max-device-width : 480px) {
-  /* line 71, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+  /* line 73, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
   article .article_header {
     font-size: 6.8em;
   }
 }
-/* line 89, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 91, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 article .article_url {
   padding-left: 20px;
   display: block;
@@ -1023,13 +1016,13 @@ article .article_url {
   color: #1c242a;
   font-size: 24px;
 }
-/* line 96, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 98, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 article .article_url a {
   text-decoration: none;
   color: #404f6d;
   font-size: 24px;
 }
-/* line 104, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 106, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 article .article_body {
   float: left;
   color: #1c242a;
@@ -1042,7 +1035,7 @@ article .article_body {
 @media only screen 
 		and (min-device-width : 320px)
 		and (max-device-width : 480px) {
-  /* line 104, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+  /* line 106, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
   article .article_body {
     font-size: 2.2em;
   }
@@ -1051,18 +1044,18 @@ article .article_body {
 		and (min-device-width : 768px) 
 		and (max-device-width : 1024px) 
 		and (orientation : portrait) {
-  /* line 104, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+  /* line 106, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
   article .article_body {
     font-size: 1.3em;
   }
 }
 
-/* line 131, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 133, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 article:first-child {
   margin-top: 50px;
 }
 
-/* line 134, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 136, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 .article_body {
   display: inline;
   float: left;
@@ -1070,18 +1063,18 @@ article:first-child {
   margin: 0 0%;
 }
 
-/* line 137, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 139, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 .article_header {
   text-align: right;
   font-size: 70px;
 }
 
-/* line 141, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 143, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 .article_url {
   text-align: right;
 }
 
-/* line 144, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 146, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 .article_summary {
   display: inline;
   float: left;
@@ -1090,7 +1083,7 @@ article:first-child {
 }
 
 /* connect buttons at bottom of page */
-/* line 149, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 151, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 .connect_button {
   border: 1px solid #acc0c7;
   text-align: center;
@@ -1103,13 +1096,13 @@ article:first-child {
   width: 149px;
 }
 
-/* line 161, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 163, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 .connect_footer h1 {
   font: 62px LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
   color: white;
   display: inline-block;
 }
-/* line 166, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
+/* line 168, ../../app/assets/stylesheets/nathancrankdotcom.css.scss */
 .connect_footer a {
   text-decoration: none;
   color: #1c242a;
