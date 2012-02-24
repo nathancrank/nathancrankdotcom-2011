@@ -897,7 +897,7 @@ header {
 }
 /* line 11, ../../app/assets/stylesheets/header.css.scss */
 header:hover {
-  height: 6em;
+  height: 5.7em;
 }
 /* line 23, ../../app/assets/stylesheets/header.css.scss */
 header .logo_type {
@@ -908,21 +908,23 @@ header .logo_type {
 /* line 31, ../../app/assets/stylesheets/header.css.scss */
 header nav ul {
   padding: 5px 0;
+  margin: 0;
 }
-/* line 34, ../../app/assets/stylesheets/header.css.scss */
+/* line 35, ../../app/assets/stylesheets/header.css.scss */
 header nav ul li {
   display: inline;
-  padding: 4px 12px 6px 16px;
+  padding: 0 12px 0 16px;
+  margin: 0;
   font-size: 1em;
   font-weight: 500;
 }
-/* line 41, ../../app/assets/stylesheets/header.css.scss */
+/* line 43, ../../app/assets/stylesheets/header.css.scss */
 header nav ul li a {
   text-decoration: none;
   color: #718ca1;
 }
-/* line 46, ../../app/assets/stylesheets/header.css.scss */
-header nav ul li:hover a {
+/* line 48, ../../app/assets/stylesheets/header.css.scss */
+header nav ul li a:hover {
   color: #1c242a;
 }
 

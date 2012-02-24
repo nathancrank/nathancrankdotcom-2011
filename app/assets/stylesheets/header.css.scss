@@ -9,7 +9,7 @@ header {
 	@include animate;
 	
 	&:hover {
-		height: 6em;
+		height: 5.7em;
 	}
 	
 	background: $light_color;
@@ -30,10 +30,12 @@ header {
 		
 		ul {
 			padding: 5px 0;
+			margin: 0;
 			
 			li {
 				display: inline;
-				padding: 4px 12px 6px 16px;
+				padding: 0 12px 0 16px;
+				margin: 0;
 				font-size: 1em;
 				font-weight: 500;
 				
@@ -43,7 +45,7 @@ header {
 					color: lighten($dark_color, 40%);
 				}				
 				
-				&:hover a {
+				a:hover {
 					color: $dark_color;
 				}
 			}
