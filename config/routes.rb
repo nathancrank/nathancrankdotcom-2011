@@ -6,9 +6,6 @@ Nathancrankdotcom::Application.routes.draw do
   root :to => 'pages#portfolio'
   
   match '/portfolio', :to => 'pages#portfolio'
-  match '/blog', :to => 'pages#blog'
-  match '/resume', :to => 'pages#resume'
-  match '/coverletter', :to => 'pages#coverletter'
   
   
   # The priority is based upon order of creation:

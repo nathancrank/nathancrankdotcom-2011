@@ -35,6 +35,7 @@ $leagueset: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial, san-serif;
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial;
 	font-weight: light;
+	background-color: $light_color;
 }
 /* add hyphens */
 p {
@@ -108,7 +109,7 @@ p {
 		padding-right: 25px;
 	}
 	a:nth-child(2) {
-		padding: 0 29px;
+		padding: 0 34px;
 	}
 	a:last-child {
 		padding-left: 28px;
@@ -125,7 +126,7 @@ p {
 /* actual header code */
 header {
 	@include column(12);
-	@include logo($dark_color, $light_color);
+	@include logo($light_color, $dark_color);
 	.logo_top {
 		color: $color_one;
 		font-size: 177px;
